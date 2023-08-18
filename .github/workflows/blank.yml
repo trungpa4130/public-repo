@@ -28,7 +28,7 @@ jobs:
         uses: stainless-api/upload-openapi-spec-action@v0.2.1
         with:
           # Stainless API key.
-          stainless_api_key: aaaaa
+          stainless_api_key: ${{ secrets.STAINLESS_API_KEY }}
           # Path to the OpenAPI file.
           input_path: abc
           # Output path for the decorated OpenAPI spec.
